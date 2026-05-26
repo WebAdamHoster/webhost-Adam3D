@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>3D Block Builder</title>
+
+  <!-- Import map for esm.sh modules -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://esm.sh/three@0.158.0",
+      "three/examples/jsm/controls/PointerLockControls": "https://esm.sh/three@0.158.0/examples/jsm/controls/PointerLockControls"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+    <div id="colorSwatch" title="Current block color"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

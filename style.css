@@ -1,0 +1,55 @@
+:root{
+  --bg:#e7f0f6;
+  --ui-bg: rgba(0,0,0,0.4);
+  --ui-text: #fff;
+}
+
+html,body{
+  height:100%;
+  margin:0;
+  background:var(--bg);
+  font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+#canvas{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  touch-action:none;
+}
+
+#instructions{
+  position:fixed;
+  left:12px;
+  top:12px;
+  color:#0b2330;
+  font-size:13px;
+  pointer-events:auto;
+  background:transparent;
+  padding:4px 6px;
+  border-radius:6px;
+}
+
+#blockColor{
+  position:fixed;
+  left:12px;
+  top:42px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  pointer-events:auto;
+  color:#0b2330;
+  font-size:13px;
+}
+
+#colorSwatch{
+  width:18px;
+  height:18px;
+  border-radius:3px;
+  display:inline-block;
+  border:1px solid rgba(255,255,255,0.2);
+}
